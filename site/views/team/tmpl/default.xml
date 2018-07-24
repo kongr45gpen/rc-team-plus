@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_RCTEAM_TEAM_VIEW_DEFAULT_TITLE">
+        <message>COM_RCTEAM_TEAM_VIEW_DEFAULT_DESC</message>
+    </layout>
+
+	<fields name="request"
+            addfieldpath="/administrator/components/com_rcteam/models/fields">
+		<fieldset name="request">
+			<field 
+				name="teamid" 
+				type="rcteamselect"
+				label="COM_RCTEAM_TEAM_VIEW_SELECT_TEAM_LABEL"
+				description="COM_RCTEAM_TEAM_VIEW_SELECT_TEAM_DESC"
+				required="true"
+				select="true"
+				new="true"
+				edit="true"
+				clear="true"
+			/>
+			<field 
+				name="columns" 
+				type="list"
+				label="COM_RCTEAM_COLUMNS_LABEL"
+				description="COM_RCTEAM_COLUMNS_DESC"
+				required="true"
+				select="true"
+				default="3"
+			>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="0">COM_RCTEAM_COLUMNS_FIXED_OPTION</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata> 

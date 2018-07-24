@@ -1,0 +1,15 @@
+.icon-teams::before, .icon-members::before {
+    content:"m";
+}
+
+.icon-config::before {
+    content:"9";
+}
+
+.icon-member::before, .icon-team::before {
+    content:",";
+}
+
+.icon-about::before {
+    content:"E";
+}

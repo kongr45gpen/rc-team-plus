@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_rcteam/models/rules">
+	<fieldset name="misc">
+		<field
+			name="published"
+			label="COM_RCTEAM_STATE_LABEL"
+			description="COM_RCTEAM_STATE_DESC"
+			type="list"
+			class=""
+			size="1"
+			default="1"
+			filter="intval"
+		>
+			<option value="1">COM_RCTEAM_PUBLISHED</option>
+			<option value="0">COM_RCTEAM_UNPUBLISHED</option>
+		</field>
+		<field
+			name="TeamID"
+			label="COM_RCTEAM_MEMBER_TEAM_LABEL"
+			description="COM_RCTEAM_MEMBER_TEAM_DESC"
+			type="rcteamselect"
+			/>
+		<field
+			name="MemberID"
+			readonly="readonly"
+			label="COM_RCTEAM_MEMBER_ID_LABEL"
+			description="COM_RCTEAM_MEMBER_ID_DESC"
+		/>
+		<field
+			name="ordering"
+			readonly="readonly"
+			label="COM_RCTEAM_SORT"
+			description="COM_RCTEAM_SORT_DESC"
+		/>
+	</fieldset>
+	<fieldset name="basicinfo">
+		<field
+			name="MemberName"
+			type="text"
+			label="COM_RCTEAM_MEMBER_NAME_LABEL"
+			description="COM_RCTEAM_MEMBER_NAME_DESC"
+			size="40"
+			default=""
+			required="true"
+			class="inputbox validate-name"
+			validate = "name"
+			/>
+		<field
+			name="MemberRole"
+			type="text"
+			label="COM_RCTEAM_MEMBER_ROLE_LABEL"
+			description="COM_RCTEAM_MEMBER_ROLE_DESC"
+			size="40"
+			class="inputbox"
+			default=""
+			/>
+		<field
+			name="MemberImage"
+			type="media"
+			label="COM_RCTEAM_MEMBER_IMAGE_LABEL"
+			description="COM_RCTEAM_MEMBER_IMAGE_DESC"
+			preview="true"
+			/>
+		<field
+			name="MemberBio"
+			type="textarea"
+			label="COM_RCTEAM_MEMBER_BIO_LABEL"
+			description="COM_RCTEAM_MEMBER_BIO_DESC"
+			filter="safehtml"
+			size="65535"
+			rows="10"
+			cols="100"
+			default=""
+			hint="Write a short bio for this team member..."
+			/>
+	</fieldset>
+	<fieldset name="contacticons">
+		<field
+			type="note"
+			title="Email"
+			description="Enter a full email address. It will be presented as a 'mailto' link on your site."
+			/>
+		<field
+			name="MemberEmail"
+			type="email"
+			label="COM_RCTEAM_MEMBER_EMAIL_LABEL"
+			description="COM_RCTEAM_MEMBER_EMAIL_DESC"
+			size="255"
+			class="inputbox"
+			required="false"
+			default=""
+			/>
+		<field
+			type="note"
+			title="Contact links"
+			description="Contact links should be entered as full URLs, e.g. 'https://www.facebook.com/exampleusername'"
+			/>
+		<field
+			name="MemberTwitter"
+			type="url"
+			label="COM_RCTEAM_MEMBER_TWITTER_LABEL"
+			description="COM_RCTEAM_MEMBER_TWITTER_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberFacebook"
+			type="url"
+			label="COM_RCTEAM_MEMBER_FACEBOOK_LABEL"
+			description="COM_RCTEAM_MEMBER_FACEBOOK_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberWebsite"
+			type="url"
+			label="COM_RCTEAM_MEMBER_WEBSITE_LABEL"
+			description="COM_RCTEAM_MEMBER_WEBSITE_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberInstagram"
+			type="url"
+			label="COM_RCTEAM_MEMBER_INSTAGRAM_LABEL"
+			description="COM_RCTEAM_MEMBER_INSTAGRAM_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberLinkedin"
+			type="url"
+			label="COM_RCTEAM_MEMBER_LINKEDIN_LABEL"
+			description="COM_RCTEAM_MEMBER_LINKEDIN_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberTumblr"
+			type="url"
+			label="COM_RCTEAM_MEMBER_TUMBLR_LABEL"
+			description="COM_RCTEAM_MEMBER_TUMBLR_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberYoutube"
+			type="url"
+			label="COM_RCTEAM_MEMBER_YOUTUBE_LABEL"
+			description="COM_RCTEAM_MEMBER_YOUTUBE_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberGithub"
+			type="url"
+			label="COM_RCTEAM_MEMBER_GITHUB_LABEL"
+			description="COM_RCTEAM_MEMBER_GITHUB_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+		<field
+			name="MemberGoogleplus"
+			type="url"
+			label="COM_RCTEAM_MEMBER_GOOGLEPLUS_LABEL"
+			description="COM_RCTEAM_MEMBER_GOOGLEPLUS_DESC"
+			size="255"
+			class="inputbox validate-url"
+			validate = "url"
+			default=""
+			/>
+	</fieldset>
+</form>

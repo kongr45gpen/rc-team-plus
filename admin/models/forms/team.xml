@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="TeamID"
+			readonly="readonly"
+			/>
+		<field
+			name="TeamName"
+			type="text"
+			label="COM_RCTEAM_TEAM_NAME_LABEL"
+			description="COM_RCTEAM_TEAM_NAME_DESC"
+			size="40"
+			class="inputbox"
+			default=""
+			required="true"
+			/>
+		<field
+			name="TeamDesc"
+			type="textarea"
+			label="COM_RCTEAM_TEAM_DESC_LABEL"
+			description="COM_RCTEAM_TEAM_DESC_DESC"
+			size="400"
+			class="inputbox"
+			default=""
+			/>
+	</fieldset>
+</form>

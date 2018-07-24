@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="ConfigID"
+			default="1"
+			readonly="readonly"
+			type="hidden"
+			/>
+		<field
+			name="StyleSheet"
+			type="filelist"
+            directory="media/com_rcteam/assets/css/"
+            label="COM_RCTEAM_CONFIG_STYLE_LABEL"
+            description="COM_RCTEAM_CONFIG_STYLE_DESC"
+			default="default.css"
+			hide_none="true"
+			hide_default="true"
+			filter=".css"
+			/>
+	</fieldset>
+</form>

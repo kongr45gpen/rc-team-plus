@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4.8" method="upgrade">
+    <name>RC Team Plus</name>
+    <creationDate>17 May 2018</creationDate>
+    <author>Rich Court, kongr45gpen</author>
+    <copyright>Rich Court 2018</copyright>
+    <license>GNU/GPL</license>
+    <authorUrl>www.therichcourt.com</authorUrl>
+    <version>1.2.0</version>
+    <description>A file and media sales system for Joomla</description>
+
+    <install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<!--<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>-->
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+    <updateservers>
+		<server type="extension" priority="1" name="RC Team">http://therichcourt.com/downloads/updates/rcteam_updates.xml</server>
+	 </updateservers>
+
+    <files folder="site">
+        <filename>rcteam.php</filename>
+        <filename>controller.php</filename>
+        <filename>index.htm</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <media folder="media" destination="com_rcteam">
+        <folder>assets</folder>
+    </media>
+
+    <administration>
+        <menu link="option=com_rcteam">COM_RCTEAM_MENU_RCTEAM</menu>
+        <submenu>
+            <menu link="option=com_rcteam&amp;view=config">COM_RCTEAM_MENU_CONFIG</menu>
+            <menu link="option=com_rcteam&amp;view=teams">COM_RCTEAM_MENU_TEAMS</menu>
+            <menu link="option=com_rcteam&amp;view=members">COM_RCTEAM_MENU_MEMBERS</menu>
+            <menu link="option=com_rcteam&amp;view=about">COM_RCTEAM_MENU_ABOUT</menu>
+        </submenu>
+        <files folder="admin">
+            <filename>rcteam.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.htm</filename>
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_rcteam.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_rcteam.sys.ini</language>
+		</languages>
+    </administration>
+</extension>
